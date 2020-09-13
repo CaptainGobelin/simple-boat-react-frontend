@@ -59,6 +59,9 @@ class BoatListComponent extends Component {
 						)
 					}
 					<div className="row" style={{height:"86px",width:"100%"}}>
+						<div className="col-2 my-auto">
+							<button className="btn btn-primary btn-block my-4" onClick={this.addButtonClicked}>Create boat</button>
+						</div>
 						<div className="col-1 my-auto">#</div>
 						<div className="col-2 my-auto p-0">
 							<input type="text" className="form-control" placeholder="Name" name="boat_name" value={this.state.boat_name} onChange={this.handleChange} />
@@ -66,9 +69,7 @@ class BoatListComponent extends Component {
 						<div className="col-6 my-auto">
 							<textarea className="form-control" rows="2" name="boat_description" value={this.state.boat_description} onChange={this.handleChange}></textarea>
 						</div>
-						<div className="col-3 my-auto">
-							<button className="btn btn-primary btn-block my-4" onClick={this.addButtonClicked}>Create boat</button>
-						</div>
+						<div className="col-1 my-auto" />
 					</div>
 				</div>
 			</div>

@@ -25,7 +25,7 @@ class BoatDataService {
 		})
 	}
 
-	update(data, id) {
+	updateBoat(data, id) {
 		axios.put(`${DASHBOARD_API_URL}/${id}/update`, data).then(response => {
 			window.location.reload();
 		}).catch(() => {
